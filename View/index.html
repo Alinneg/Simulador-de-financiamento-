@@ -47,47 +47,48 @@
 
         </div>
 
-        <div class="col-lg-9" style="background-color:antiquewhite; height: 100%;">
+        <div class="col-lg-9" style="background-color:antiquewhite; height: 110%;">
 
             <p style="margin-top: 40px; margin-left: 150px; margin-right: 150px;">Pronto para começar? Então, informe os campos abaixo</p>
 
-            <form style="margin-top: 50px; margin-left: 150px; margin-right: 150px;">
+            <form  style="margin-top: 50px; margin-left: 15%; margin-right: 15%;" class="needs-validation" novalidate>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Qual o tipo de bem?*</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select class="form-control" id="exampleFormControlSelect1" required>
+                        <option selected>Escolha o tipo de bem...</option>
+                        <option>Novo</option>
+                        <option>Usado</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="valorSolicitado">Qual valor você quer solicitar (R$)?*</label>
-                    <input type="text" class="form-control" id="valorSolicitado" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="valorSolicitado" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        Valor máximo 500.000
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="valorEntrada">Quanto pretende dar de entrada (R$)?*</label>
-                    <input type="text" class="form-control" id="valorEntrada" placeholder="name@example.com">
+                    <label for="valorEntrada">Quanto pretende dar de entrada (R$)?</label>
+                    <input type="text" class="form-control" id="valorEntrada" placeholder="name@example.com" >
                 </div>
                 <div class="form-group">
                     <label for="dataPrimeiraParcela">Quando quer pagar a primeira parcela?*</label>
-                    <input type="text" class="form-control" id="dataPrimeiraParcela" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="dataPrimeiraParcela" placeholder="name@example.com" required>
                 </div>
                 <div class="form-group">
                     <label for="quantidadeParcelas">Em quantas parcelas quer pagar?*</label>
-                    <input type="text" class="form-control" id="quantidadeParcelas" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="quantidadeParcelas" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        Prazo máximo 60 parcelas
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="taxaDeJuros">Qual o valor da taxa de juros (% ao mês)?*</label>
-                    <input type="text" class="form-control" id="taxaDeJuros" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="taxaDeJuros" placeholder="name@example.com" required>
                 </div>
-                <button style="background-color: #47362f; border-color: #48362f; width: 100%;" type="button" class="btn btn-primary btn-reportar">CALCULAR</button>
+                <button style="background-color: #47362f; border-color: #48362f; width: 100%; margin-top: 2%;" type="submit" class="btn btn-primary btn-calcular">CALCULAR</button>
             </form>
-
         </div>
-
-    </div>
 </div>
 
 <script src="js/commands.js"></script>
