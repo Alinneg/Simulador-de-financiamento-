@@ -53,8 +53,8 @@
 
             <form  style="margin-top: 50px; margin-left: 15%; margin-right: 15%;" class="needs-validation" novalidate>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Qual o tipo de bem?*</label>
-                    <select class="form-control" id="exampleFormControlSelect1" required>
+                    <label for="tipoBem">Qual o tipo de bem?*</label>
+                    <select class="form-control" id="tipoBem" required>
                         <option selected>Escolha o tipo de bem...</option>
                         <option>Novo</option>
                         <option>Usado</option>
@@ -86,7 +86,8 @@
                     <label for="taxaDeJuros">Qual o valor da taxa de juros (% ao mês)?*</label>
                     <input type="text" class="form-control" id="taxaDeJuros" placeholder="name@example.com" required>
                 </div>
-                <button style="background-color: #47362f; border-color: #48362f; width: 100%; margin-top: 2%;" type="submit" class="btn btn-primary btn-calcular">CALCULAR</button>
+                <button style="background-color: #47362f; border-color: #48362f; width: 100%; margin-top: 2%;"
+                        type="submit" class="btn btn-primary btn-calcular" onClick="calcularFinanciamento()">CALCULAR</button>
             </form>
         </div>
 </div>
