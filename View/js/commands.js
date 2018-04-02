@@ -10,7 +10,7 @@ function calcularParcela() {
   var valorParcelaSemJuros;
   var valorParcelaComJuros;
   if(document.getElementById('valorEntrada').value==' ') {
-    valorPorcentagem = ((document.getElementeById('taxaDeJuros').value)/100)*(document.getElementById('valorSolicitado').value)
+    valorPorcentagem = ((document.getElementById('taxaDeJuros').value)/100)*(document.getElementById('valorSolicitado').value)
     valorParcelaSemJuros = (document.getElementById('valorSolicitado').value)/(document.getElementById('quantidadeParcelas').value);
     return valorParcelaComJuros = valorPorcentagem + valorParcelaSemJuros;
   }
